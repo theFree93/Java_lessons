@@ -38,7 +38,7 @@ public class MyFlat {
         RabbitFood rabbitFood = new RabbitFood();
         catFood.setTypeOfFeed("sausages");
         rabbitFood.setTypeOfFeed("hay");
-        catFood.catEat(catTofa, 200);
+        catFood.catEat(catTofa, 1);
         rabbitFood.rabbitEat(rabbitKrolyha, 800);
 
 
