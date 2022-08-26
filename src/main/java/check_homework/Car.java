@@ -1,11 +1,30 @@
 package check_homework;
 
-public class Car extends Person {
-    public static void canDriveACar(String drive){
-        System.out.println("Can drive a car " + drive);
+public class Car{
+    private String model;
+    private String carColour;
+
+    public String getModel() {
+        return model;
     }
-    public static void canWashTheCar(String washTheCar){
-        System.out.println("can wash the car " + washTheCar);
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getCarColour(String black) {
+        return carColour;
+    }
+
+    public void setCarColour(String carColour) {
+        this.carColour = carColour;
+    }
+
+    public void canDriveACar(Person person){
+        System.out.println(person.getName() + " can drive" + " " + getModel() + " " + "car");
+    }
+    public void canWashTheCar(Person person){
+        System.out.println(person.getName() + " " + "can wash " + getModel() );
 
     }
 

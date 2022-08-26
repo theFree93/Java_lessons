@@ -14,23 +14,25 @@ public class Pet {
         this.name = name;
     }
 
-    public void needToEat(int amountEat, String rabbitName, String name) {
-        if (amountEat < 3) {
-            System.out.println(name + " it's very bad,need to eat three times a day");
-        } else {
-            System.out.println("it's a lot, need to eat three times a day");
-        }
-    }
+//    public void eat(Pet pet, int amountSausages ) {
+//        if (amountSausages < 3 && amountSausages >= 0) {
+//            System.out.println(pet.getName() + " it's very bad,need to eat three times a day");
+//        } else {
+//            System.out.println(pet.getName() + " this is a lot of, need to eat no more than 3 sausages a day");
+//        }
+//    }
 
-    public void needToDrink(int amountOfWaterInGrams, String rabbitName, String name) {
-
+    public void drink(Pet pet, int amountOfWaterInGrams) {
+        if (amountOfWaterInGrams >= 0){
         if (amountOfWaterInGrams < 100) {
-            System.out.println("need more water");
-        } else if (amountOfWaterInGrams >= 300) {
-            System.out.println("OK");
+            System.out.println(pet.getName() + " need more water");
+        } else if (amountOfWaterInGrams <= 300) {
+            System.out.println(pet.getName() + " has enough water");
         } else if (amountOfWaterInGrams > 301) {
-
-            System.out.println("it's a lot of water can go bad");
+            System.out.println(" it's a lot of water " + pet.getName() + "can feel bad");
+            }
+        } else {
+            System.out.println("Not suitable amount of water ");
         }
     }
 }

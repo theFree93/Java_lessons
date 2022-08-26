@@ -4,7 +4,7 @@ public class Cat extends Pet {
 
 
     public void lookForMice(String lookingForMice){
-        System.out.println("Cat can looking for mice" );
+        System.out.println(getName() + " cat can looking for mice" );
     }
 }
 
