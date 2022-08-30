@@ -12,7 +12,7 @@ public class Car{
         this.model = model;
     }
 
-    public String getCarColour(String black) {
+    public String getCarColour() {
         return carColour;
     }
 
@@ -20,11 +20,11 @@ public class Car{
         this.carColour = carColour;
     }
 
-    public void canDriveACar(Person person){
-        System.out.println(person.getName() + " can drive" + " " + getModel() + " " + "car");
+    public void canDriveACar(Person person) {
+        System.out.println(person.getName() + " can drive" + " "+ carColour + model + " " + "car");
     }
     public void canWashTheCar(Person person){
-        System.out.println(person.getName() + " " + "can wash " + getModel() );
+        System.out.println(person.getName() + " " + "can wash " + getCarColour() + model );
 
     }
 

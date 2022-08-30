@@ -17,34 +17,25 @@ public class MyFlat {
         car.canDriveACar(person);
         car.canWashTheCar(person);
 
-
         Cat cat = new Cat();
-        cat.setName("Tofa,");
-
-        Pet pet = new Pet();
+        cat.setName("Tofa");
         Cat catTofa = new Cat();
         catTofa.setName("Tofa");
-        catTofa.lookForMice(cat.getName());
+        catTofa.lookForMice(catTofa);
         catTofa.drink(catTofa, 200);
-
+        CatFood catFood = new CatFood();
+        catFood.setTypeOfFeed("sausages");
+        catFood.setAmountOfFeed(5);
+        catTofa.catEat(catTofa, catFood);
 
 
         Rabbit rabbitKrolyha = new Rabbit();
         rabbitKrolyha.setName("Krolyha");
         rabbitKrolyha.drink(rabbitKrolyha, 100);
-
-        Food food = new Food();
-        CatFood catFood = new CatFood();
         RabbitFood rabbitFood = new RabbitFood();
-        catFood.setTypeOfFeed("sausages");
         rabbitFood.setTypeOfFeed("hay");
-        catFood.catEat(catTofa, 1);
-        rabbitFood.rabbitEat(rabbitKrolyha, 800);
-
-
-
-
-
+        rabbitFood.setAmountOfFeed(200);
+        rabbitKrolyha.rabbitEat(rabbitKrolyha, rabbitFood);
     }
 }
 

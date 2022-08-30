@@ -1,6 +1,16 @@
 package check_homework;
 
 public class Food {
+    private int amountOfFeed;
+
+    public int getAmountOfFeed() {
+        return amountOfFeed;
+    }
+
+    public void setAmountOfFeed(int amountOfFeed) {
+        this.amountOfFeed = amountOfFeed;
+    }
+
     private String typeOfFeed;
 
     public String getTypeOfFeed() {
@@ -8,9 +18,8 @@ public class Food {
     }
 
     public void setTypeOfFeed(String typeOfFeed) {
-        this.typeOfFeed = typeOfFeed;
+        this.typeOfFeed = typeOfFeed.toLowerCase();
     }
-
-    }
+}
 
 

@@ -6,17 +6,20 @@ public class PersonActions {
     }
 
     public static void canGetUp(String person) {
-        System.out.println(person + "Person can get up " );
+        System.out.println(person + "Person can get up");
 
     }
 
     public static void canWatchTV(String person) {
         System.out.println(person + "can watch TV");
     }
+
     public static void canOpenWindow(String person) {
         System.out.println(person + "can open windows");
     }
 }
+
+
 
 
 
