@@ -20,13 +20,13 @@ public class Car{
         this.carColour = carColour;
     }
 
+
     public void canDriveACar(Person person) {
-        System.out.println(person.getName() + " can drive" + " "+ carColour + model + " " + "car");
+        System.out.println(person.getName() + " can drive" + " "+ carColour + " " + model + " " + "car");
     }
     public void canWashTheCar(Person person){
-        System.out.println(person.getName() + " " + "can wash " + getCarColour() + model );
+        System.out.println(person.getName() + " " + "can wash " + " " + getCarColour() + model );
 
     }
-
 
 }

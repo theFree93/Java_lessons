@@ -6,10 +6,14 @@ public class MyFlat {
         Person person = new Person();
         person.setName("Zhenya");
         person.setSurname("Kiselev");
-        PersonActions.canSleep(person.getName());
-        PersonActions.canGetUp(person.getName());
-        PersonActions.canWatchTV(person.getName());
-        PersonActions.canOpenWindow(person.getName());
+//        PersonActions.canSleep(person.getName());
+//        PersonActions.canGetUp(person.getName());
+//        PersonActions.canWatchTV(person.getName());
+//        PersonActions.canOpenWindow(person.getName());
+//        PersonActions.canUseLaptop(person.getName());
+//        PersonActions.canSitOnTheChair(person.getName());
+        PersonActions.actions(person.getName());
+
 
         Car car = new Car();
         car.setModel("BMW");
@@ -18,15 +22,17 @@ public class MyFlat {
         car.canWashTheCar(person);
 
         Cat cat = new Cat();
+        Food food = new Food();
         cat.setName("Tofa");
         Cat catTofa = new Cat();
         catTofa.setName("Tofa");
         catTofa.lookForMice(catTofa);
-        catTofa.drink(catTofa, 200);
+        catTofa.drink(catTofa, 500);
         CatFood catFood = new CatFood();
         catFood.setTypeOfFeed("sausages");
         catFood.setAmountOfFeed(5);
-        catTofa.catEat(catTofa, catFood);
+        food.eat(catTofa, catFood);
+
 
 
         Rabbit rabbitKrolyha = new Rabbit();
@@ -35,7 +41,7 @@ public class MyFlat {
         RabbitFood rabbitFood = new RabbitFood();
         rabbitFood.setTypeOfFeed("hay");
         rabbitFood.setAmountOfFeed(200);
-        rabbitKrolyha.rabbitEat(rabbitKrolyha, rabbitFood);
+        food.eat(rabbitKrolyha, rabbitFood);
     }
 }
 
